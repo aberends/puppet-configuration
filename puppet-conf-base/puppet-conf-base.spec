@@ -42,11 +42,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(0644,root,root)
-%config %dir /var/lib/hiera/platforms
 %config /var/lib/hiera/base.yaml
-/var/lib/hiera/depzone_platform_instance.sh
-%config /var/lib/hiera/platforms
-/var/lib/hiera/puppet_dev_copy.sh
+%attr(0755,root,root) /var/lib/hiera/depzone_platform_instance.sh
+/var/lib/hiera/platforms
+%attr(0755,root,root) /var/lib/hiera/puppet_dev_copy.sh
 
 %changelog
 * Tue Aug 19 2014 Allard Berends <allard.berends@example.com> - 0.1.1-1

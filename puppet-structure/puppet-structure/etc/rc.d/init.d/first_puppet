@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# first_puppet: One time puppet configuration after reboot
+#
+# chkconfig: 345 99 01
+# description:  This is a script to configure puppet once
+#
+# processname: first_puppet
+# pidfile:
+#
+
+start() {
+    echo "One time configuration of puppet"
+    if [ -f /etc/profile.d/depzone.sh ]; then
+        . /etc/profile.d/depzone.sh
+    else
+        /bin/echo "ERROR: /etc/profile.d/depzone.sh not set" >&2
+        exit 1
+    fi
+    /usr/bin/puppet apply /etc/puppet/manifests/site.pp
+    /sbin/chkconfig first_puppet off
+}
+
+case "$1" in
+    start) start ;;
+esac
