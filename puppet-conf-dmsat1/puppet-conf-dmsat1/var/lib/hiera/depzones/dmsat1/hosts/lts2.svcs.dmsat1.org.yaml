@@ -1,0 +1,27 @@
+---
+
+roles:
+ - role::base
+
+instance: lts
+platform: lts1
+
+machine:
+ fqdn:
+  p:    lts2.svcs.dmsat1.org
+ aliases:
+  p:
+   - lts2
+ ipv4:
+  p:     192.168.5.32/24
+  dp:    192.168.5.1
+ nics:
+  - 52:54:00:a8:05:20
+ description:  "LTS 2 test node"
+ information:  "proxy"
+ location:     "services domain"
+ machinetype:  "kvm"
+ platform:     "generic"
+ provisioning: "d21sw1.svcs.dmsat1.org"
+ rhelversion:  "6.5"
+ use_proxy:    "no"

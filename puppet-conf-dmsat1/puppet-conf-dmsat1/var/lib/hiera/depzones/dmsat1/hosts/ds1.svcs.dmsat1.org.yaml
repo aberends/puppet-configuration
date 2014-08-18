@@ -1,0 +1,29 @@
+---
+
+roles:
+ - 'roles::ldap::ha'
+
+ldap::ha::instance: 'ldap1'
+ldap::ha::platform: 'ldap'
+
+profiles::base6::ldap_type: 'server'
+
+machine:
+ fqdn:
+  p:    ds1.svcs.dmsat1.org
+ aliases:
+  p:
+   - ds1
+ ipv4:
+  p:     192.168.5.14/24
+  dp:    192.168.5.1
+ nics:
+  - 52:54:00:a8:05:0e
+ description:  "DS 1 test node"
+ information:  "proxy"
+ location:     "services domain"
+ machinetype:  "kvm"
+ platform:     "generic"
+ provisioning: "d21sw1.svcs.dmsat1.org"
+ rhelversion:  "6.5"
+ use_proxy:    "no"

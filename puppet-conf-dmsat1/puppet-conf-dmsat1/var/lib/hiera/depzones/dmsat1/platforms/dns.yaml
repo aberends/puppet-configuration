@@ -1,0 +1,6 @@
+---
+
+dns::server::params::auto_zone:     'yes'
+dns::server::params::tools_channel:
+ - 'example-puppet-tools-6u5-1_0'
+ - 'example-epel-6u5-1_0'

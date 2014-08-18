@@ -1,0 +1,26 @@
+---
+
+roles:
+ - roles::ntp::clock
+
+profiles::base6::ntp_type: 'server'
+
+machine:
+ fqdn:
+  p:    ant1.svcs.dmsat1.org
+ aliases:
+  p:
+   - ant1
+ ipv4:
+  p:     192.168.5.20/24
+  dp:    192.168.5.1
+ nics:
+  - 52:54:00:a8:05:14
+ description:  "ANT 1 test node"
+ information:  "proxy"
+ location:     "services domain"
+ machinetype:  "kvm"
+ platform:     "generic"
+ provisioning: "d21sw1.svcs.dmsat1.org"
+ rhelversion:  "6.5"
+ use_proxy:    "no"

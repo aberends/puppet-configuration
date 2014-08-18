@@ -1,0 +1,27 @@
+---
+
+roles:
+ - roles::dns::server
+
+dns::server::instance: 'dns1'
+dns::server::platform: 'dns'
+
+machine:
+ fqdn:
+  p:    dns1.svcs.dmsat1.org
+ aliases:
+  p:
+   - dns1
+ ipv4:
+  p:     192.168.5.25/24
+  dp:    192.168.5.1
+ nics:
+  - 52:54:00:a8:05:19
+ description:  "DNS 1 test node"
+ information:  "proxy"
+ location:     "services domain"
+ machinetype:  "kvm"
+ platform:     "generic"
+ provisioning: "d21sw1.svcs.dmsat1.org"
+ rhelversion:  "6.5"
+ use_proxy:    "no"

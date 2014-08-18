@@ -1,0 +1,28 @@
+---
+
+roles:
+ - 'roles::prov::proxy'
+
+prov::proxy::instance: 'proxy'
+prov::proxy::platform: 'prov'
+subzone:               'rmt'
+
+machine:
+ fqdn:
+  p:    proxy1.rmt.dmsat1.org
+ aliases:
+  p:
+   - proxy1
+ ipv4:
+  p:     192.168.7.11/24
+  dp:    192.168.7.1
+ nics:
+  - 52:54:00:a8:07:0b
+ description:  "PROXY 1 test node"
+ information:  "proxy"
+ location:     "remote domain"
+ machinetype:  "kvm"
+ platform:     "generic"
+ provisioning: "d21sw1.svcs.dmsat1.org"
+ rhelversion:  "6.5"
+ use_proxy:    "no"

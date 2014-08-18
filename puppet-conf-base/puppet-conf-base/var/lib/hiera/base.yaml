@@ -1,0 +1,24 @@
+---
+
+support6::params::rpms:
+ - bind-utils
+ - biosdevname
+ - dmidecode
+ - man
+ - mlocate
+ - nc
+ - openssh-clients
+ - parted
+ - rsync
+ - screen
+ - sg3_utils
+ - sos
+ - strace
+ - sysfsutils
+ - sysstat
+ - tcpdump
+ - telnet
+ - tree
+ - vim-enhanced
+ - wget
+ - unzip

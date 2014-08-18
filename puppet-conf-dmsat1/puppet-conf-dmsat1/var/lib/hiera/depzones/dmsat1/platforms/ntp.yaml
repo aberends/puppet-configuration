@@ -1,0 +1,4 @@
+---
+
+ntp::server::params::clocks:
+ - 'ant1.svcs.dmsat1.org'

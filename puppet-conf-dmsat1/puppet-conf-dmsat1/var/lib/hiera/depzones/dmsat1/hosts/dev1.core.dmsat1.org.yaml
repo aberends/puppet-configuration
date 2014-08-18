@@ -1,0 +1,24 @@
+---
+
+roles:
+ - 'roles::dev::dev'
+
+machine:
+ fqdn:
+  p:    dev1.core.dmsat1.org
+ aliases:
+  p:
+   - dev1
+ ipv4:
+  p:     192.168.4.22/24
+  dp:    192.168.4.1
+ nics:
+  - 52:54:00:a8:04:16
+ description:  "DEV 1 test node"
+ information:  "proxy"
+ location:     "core domain"
+ machinetype:  "kvm"
+ platform:     "generic"
+ provisioning: "d21sw1.svcs.dmsat1.org"
+ rhelversion:  "6.5"
+ use_proxy:    "no"
