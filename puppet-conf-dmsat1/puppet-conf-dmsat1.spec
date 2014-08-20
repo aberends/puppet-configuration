@@ -7,8 +7,7 @@ License:      GPL
 Vendor:       MSAT
 Source:       %{name}.tar.gz
 BuildRoot:    %{_tmppath}/%{name}-root
-Requires:     puppet-structure
-Requires:     puppet-baseinfra
+Requires:     puppet-conf-base
 
 %description
 This RPM provides the parameters for the dmsat1 Deployment

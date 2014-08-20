@@ -8,7 +8,6 @@ Vendor:       MSAT
 Source:       %{name}.tar.gz
 BuildRoot:    %{_tmppath}/%{name}-root
 Requires:     puppet-structure
-Requires:     puppet-baseinfra
 
 %description
 This RPM provides the base YAML parameters. These are
