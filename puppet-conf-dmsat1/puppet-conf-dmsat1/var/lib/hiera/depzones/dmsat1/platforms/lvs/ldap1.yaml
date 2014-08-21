@@ -2,10 +2,8 @@
 
 ## LVS for LDAP parameters
 lvs::ldap::params::backup:          '192.168.5.17'
-lvs::ldap::params::backup_private:  '192.168.105.17'
 lvs::ldap::params::nmask:           '255.255.255.0'
 lvs::ldap::params::primary:         '192.168.5.16'
-lvs::ldap::params::primary_private: '192.168.105.16'
 # AB: must be the same as ldap::server::params::servers.
 lvs::ldap::params::servers:
  - '192.168.5.14'
