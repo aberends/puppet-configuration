@@ -3,4 +3,4 @@ puppet-configuration
 
 Repo mapping on software channel containing RPM's with YAML configurations
 
-Since in the Puppet configuration layer many parameters are placed in YAML files, we use that information to generate other items we need. Tools to do so are located in this repository. For more information, see [msat.disruptivefoss.org](http://msat.disruptivefoss.org/).
+The Puppet integration layer, from the puppet-integration repo, dictates where in the directory trees we need to place the YAML files with Puppet parameters. This repo contains the YAML files. For more information, see [msat.disruptivefoss.org](http://msat.disruptivefoss.org/).
